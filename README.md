@@ -2,7 +2,7 @@
 - Extract text and image contents of journal articles (for personal use only)
 - Find the sentences containing keywords
 
-paper_extract\n
+paper_extract \
 |__ papers
 |__ all_images
 |__ combine_html_pages_into_text.py
