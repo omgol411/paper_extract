@@ -5,7 +5,7 @@ import string
 
 # this code extracts all the text from html files in papers directory
 # paths are according to windows OS
-html_directory = ".\papers"
+html_directory = "./papers"
 output = open("all_papers.txt","w",encoding="utf-8")
 
 num_papers = len(next(os.walk(html_directory))[2])
