@@ -2,12 +2,12 @@
 - Extract text and image contents of journal articles (for personal use only)
 - Find the sentences containing keywords
 
-paper_extract \
-|__ papers
-|__ all_images
-|__ combine_html_pages_into_text.py
-|__ extract_sentences_for_keywords.py
-|__ keep_images_only.py
+paper_extract <br />
+|__ papers <br />
+|__ all_images <br />
+|__ combine_html_pages_into_text.py <br />
+|__ extract_sentences_for_keywords.py <br />
+|__ keep_images_only.py <br />
 
 - Add HTML files of journal articles in ```papers```
 - To extract all the text content, run ```combine_html_pages_into_text.py```
