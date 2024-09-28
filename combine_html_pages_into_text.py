@@ -25,7 +25,8 @@ class DisectPaper:
         soup = BeautifulSoup(file1, 'html.parser')
 
         try:
-            paper_title = soup.title.contents[0].strip()
+            # paper_title = soup.title.contents[0].strip()
+            paper_title = os.path.basename(html_file).split(".")[0]
             print(paper_title)
 
             output.write("paper-title: "+paper_title+' \n')
