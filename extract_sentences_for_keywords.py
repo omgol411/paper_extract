@@ -9,17 +9,17 @@ import os
 keyword_dir = "./keyword_dir"
 # add your keywords here
 proteins = [
-    "Pkp2",
-    "PG",
-    "plakoglobin",
-    "plakophilin 2",
-    "desmoplakin",
-    "desmoglein 2",
-    "desmocollin 2",
-    "Dsg2",
-    "Dsc2",
-    "Pg",
-    "Dp",
+    # "Pkp2",
+    # "PG",
+    # "plakoglobin",
+    # "plakophilin 2",
+    # "desmoplakin",
+    # "desmoglein 2",
+    # "desmocollin 2",
+    # "Dsg2",
+    # "Dsc2",
+    # "Pg",
+    # "Desmoplakin",
 ]
 key_words = [
     # "bind to",
@@ -29,6 +29,7 @@ key_words = [
     # "co-localise",
     # "forms a complex",
     # "interact",
+    "stoichiometry"
 ]
 matches = (
     proteins +

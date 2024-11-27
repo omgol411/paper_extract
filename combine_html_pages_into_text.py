@@ -9,7 +9,11 @@ class DisectPaper:
     def __init__(self):
         self.html_directory = "./papers"
         self.image_dir = "./all_images"
-        self.forbidden_names = ["logo", "banner", "icon", "button", "avatar", "thumbnail"]
+        self.forbidden_names = [
+            "logo", "banner", "icon", "button", "avatar", "thumbnail",
+            "Mastadon", "traininggrants", "cover", "facebook", "twitter",
+            "wechat", "picture3", "registernow", "cover"
+        ]
         self.name_papers = self.list_files(self.html_directory, '.html')
         self.num_papers = len(next(os.walk(self.html_directory))[2])
 
@@ -51,7 +55,7 @@ class DisectPaper:
 
             for files in os.listdir(html_folder):
                 if files.endswith((".png", ".jpg", ".jpeg", ".gif")):
-                    if not any(forbidden in files for forbidden in self.forbidden_names):
+                    if not any(forbidden in files.lower() for forbidden in self.forbidden_names):
                         print(files)
                         shutil.copy(os.path.join(html_folder, files), paper_image_dir)
 
